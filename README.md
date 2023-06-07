@@ -26,3 +26,27 @@ configuração dos classificadores do PaC encontradas via `grid search`
   - max iter = 200 
   - solver = adam
    
+## PaC para detectar intrusos no ToN-IoR Devices binário/multiclasse 
+
+Espaço de parâmetros utilizados para a busca via `grid search`   
+- `Regressão Logística` (RL)
+  - penalty = [l1, l2], 
+  - C = [0.1, 1, 10], 
+  - solve = [liblinear, saga, newton-cg, saga],
+  - max iter = [100, 500, 1000], 
+  - multi class = [ovr, multinomial], 
+  - class weight = [None,balanced]
+- `K-nearest neighbors` (KNN)
+  - k neighbors = [1, 3, 5, 7, 9], 
+  - metric = [euclidean, manhattan, chebyshev, minkowski]
+- `Naice bayes` (NB)
+  - alpha = [0.1, 0.5, 1.0
+- `Linear Discriminant Analysis` (LDA)
+  - solver = [svd, lsqr, eigen]
+- `Random Forest` (RF)
+  - n estimators = [100, 300, 500], 
+  - max depth = [3, 5, 7], 
+  - min samples split = [2, 5, 10], 
+  - min samples leaf = [1, 2, 4], 
+  - max features = [sqrt, log2], 
+  - bootstrap = [True, False]
