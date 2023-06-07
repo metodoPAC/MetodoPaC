@@ -14,8 +14,15 @@ configuração dos classificadores do PaC encontradas via `grid search`
   - max features = log2
   - min samples split = 4
   - n estimators = 300
-- Item 2
-- Item 3
-  - Sub Item 1
-  - Sub Item 2
+- Decision tree classifier (DTC)
+  - criterion = log loss
+  - min samples split = 2
+  - splitter = best
+- Multilayer perceptron (MLP)
+  - activation = tanh
+  - alpha = 0.001 
+  - hidden layer sizes = (100, 100)
+  - learning rate = daptive
+  - max iter = 200 
+  - solver = adam
    
